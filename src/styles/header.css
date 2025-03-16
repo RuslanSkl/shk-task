@@ -1,0 +1,126 @@
+/* General Header Layout */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 15px 20px;
+}
+
+/* Background Element */
+.header-ellipse {
+    position: absolute;
+    width: 528px;
+    height: 522px;
+    top: -255px;
+    left: -173px;
+    background: rgba(87, 167, 255, 0.22);
+    filter: blur(240px);
+    z-index: -1;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    flex-shrink: 0;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+/* Navigation List */
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 30px;
+}
+
+/* Navigation Link */
+.nav-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Button */
+.nav-btn {
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: none;
+    color: #253941;
+    width: 122px;
+    height: 34px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #81BDFF, #5ED9FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(#29404a, #1e292f);
+        padding: 20px 0;
+        text-align: center;
+        margin: 0;
+        z-index: 100;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-btn {
+        width: 10%;
+        margin-top: 10px;
+    }
+
+    /* Menu Toggle Button */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .menu-toggle:focus {
+        outline: none;
+    }
+}
+
+/* Show menu toggle only on mobile */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}

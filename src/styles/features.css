@@ -1,0 +1,74 @@
+/* Typography */
+.features-title {
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.features-subtitle {
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 13px 0 49px;
+}
+
+/* Layout */
+.features-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.features-container:last-child {
+    margin-bottom: 0;
+}
+
+.features-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 502px;
+    height: 276px;
+    background: rgba(242, 242, 242, 0.03);
+    border: 1px solid rgba(221, 221, 221, 0.07);
+    border-radius: 22px;
+}
+
+/* Image */
+.features-img {
+    width: 120px;
+    height: 120px;
+    margin-top: 32px;
+    align-self: flex-start;
+}
+
+/* Content */
+.features-block__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Titles & Subtitles */
+.features-container__title {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 500;
+    color: #FFFFFF;
+    font-style: italic;
+    width: 234px;
+    height: auto;
+}
+
+.features-container__subtitle {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 1.29;
+    width: 299px;
+    height: auto;
+    margin-top: 18px;
+}

@@ -1,0 +1,132 @@
+.about{
+    margin-top: 120px;
+}
+
+.about-title {
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    gap: 82px;
+    margin-top: 64px;
+}
+
+.about-block {
+    width: 607px;
+    height: 374px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-block__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 473px;
+    height: 209px;
+}
+
+.about-block__text {
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.about-block__btn {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    line-height: 20px;
+    width: 218px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #81BDFF, #5ED9FF);
+    margin-bottom: 63px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.about-block__btn:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-wrap: wrap;
+        gap: 50px;
+        text-align: center;
+        /*align-items: center;*/
+        justify-content: center;
+    }
+
+    .about-block {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .about-block__content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-block__btn {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .about-title {
+        font-size: 1.75rem; /* Adjust for smaller screens */
+        margin-bottom: 30px;
+    }
+
+    .about-block {
+        text-align: center;
+    }
+
+    .about-block img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        margin-top: 80px;
+        padding: 0 10px;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-block img {
+        max-width: 90%;
+    }
+
+    .about-block__text {
+        font-size: 14px;
+    }
+
+    .about-block__btn {
+        width: 90%;
+    }
+}

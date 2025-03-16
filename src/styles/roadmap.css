@@ -1,0 +1,156 @@
+.roadmap-section .about-title {
+    margin-bottom: 46px;
+}
+
+.roadmap-section {
+    padding-top: 128px;
+}
+
+.roadmap-section__container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 948px;
+}
+
+.about-title {
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.roadmap-section__box {
+    position: relative;
+    justify-content: center;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.map-section__content {
+    margin-left: 10px;
+}
+
+.map-section__item--borderleft {
+    border-left: 1px solid rgba(109, 205, 255, 0.6);
+}
+
+.roadmap-section__description {
+    max-width: 250px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.map-section__item {
+    position: relative;
+    padding-left: 10px;
+    height: 105px;
+    width: 32%;
+}
+
+.map-section-dot {
+    width: auto;
+    position: absolute;
+    bottom: -40%;
+    left: -9%;
+
+    z-index: 10;
+}
+
+.roadmap-section {
+    top: 116px;
+}
+
+.roadmap-thumb__small {
+    padding-left: 5px;
+    position: relative;
+    border-left: 0.5px solid rgba(109, 205, 255, 0.6);
+    height: 110px;
+}
+
+.roadmap-thumb {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.roadmap-thumb__small--width {
+    width: 50%;
+}
+
+.map-thumb__small--bl {
+    border-left: none;
+}
+
+.roadmap-thumb__small--df {
+    width: 70%;
+    display: flex;
+}
+
+.map-dot__big--pos {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: -43%;
+    left: -8%;
+    z-index: 100;
+}
+
+.map-dot__small--pos {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: -35%;
+    left: -5%;
+    z-index: 100;
+}
+
+.roadmap-line {
+    width: 100%;
+    height: 3px;
+    border-bottom: 1px solid rgba(109, 205, 255, 0.6);
+}
+
+.xl-dot {
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px 4px #7ebbff;
+    position: absolute;
+    bottom: -18%;
+    left: -2%;
+    width: 11px;
+    height: 11px;
+    &--pos {
+        left: -2.5%;
+    }
+}
+
+.small-dot {
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px 4px #7ebbff;
+    position: absolute;
+    top: -21%;
+    left: -1.5%;
+    width: 8px;
+    height: 8px;
+}
+
+.roadmap-section__subtitle {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #FFFFFF;
+}
+
+.roadmap-section__description {
+    font-weight: 300;
+    font-size: 14px;
+    color: #FFFFFFCC;
+}
+
+.roadmap-section__subtitle--mb {
+    margin-top: 50px;
+}

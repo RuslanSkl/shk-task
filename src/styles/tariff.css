@@ -1,0 +1,207 @@
+/* Tariff Section */
+.tariff {
+    position: relative;
+    padding-top: 132px;
+}
+
+/* Title */
+.tariff-title {
+    margin-bottom: 68px;
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Container */
+.tariff-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Tariff Item */
+.tariff-container__item {
+    position: relative;
+    width: calc(100% / 3);
+    padding: 102px 30px 36px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    height: max-content;
+}
+
+/* Image Positions */
+.tariff-container__image,
+.tariff-container__image--2,
+.tariff-container__image--3 {
+    position: absolute;
+}
+
+.tariff-container__image {
+    top: -38px;
+    left: -3px;
+}
+
+.tariff-container__image--2 {
+    top: -22px;
+    left: 19px;
+}
+
+.tariff-container__image--3 {
+    top: -35px;
+    left: 8px;
+}
+
+/* Tariff Info */
+.tariff-container__info {
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #52a4ff;
+}
+
+/* Price Section */
+.tariff-container__price {
+    margin-bottom: 22px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1;
+    color: #6D8088;
+}
+
+.tariff-container__price--number {
+    font-size: 52px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
+    color: #223138;
+}
+
+.tariff-container__price--request {
+    margin-bottom: 29px;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1;
+    color: #223138;
+}
+
+/* List Styling */
+.tariff-container__list {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #223138;
+}
+
+.tariff-container__list li {
+    list-style: inside;
+}
+
+.tariff-container__list > li:not(:last-child) {
+    margin-bottom: 11px;
+}
+
+/* Content Styling */
+.tariff-container__content {
+    margin-top: 22px;
+}
+
+.tariff-container__subtitle {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: italic;
+    color: #223138;
+    list-style: inside;
+}
+
+.tariff-container__text {
+    margin-left: 21px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #223138;
+}
+
+.tariff-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* Button Styling */
+.tariff-container__btn {
+    width: 302px;
+    height: 64px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: #FFFFFF;
+    background-color: #52A4FF;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.tariff-container__btn:hover {
+    background-color: #FFFFFF;
+    color: #52A4FF;
+    border: 1px solid #52A4FF;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .tariff-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tariff-container__item {
+        width: 45%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tariff-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tariff-container__item {
+        width: 80%;
+    }
+
+    .tariff-title {
+        font-size: 1.75rem; /* Adjust for smaller screens */
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tariff-container__item {
+        width: 95%;
+        padding: 80px 20px 30px;
+    }
+
+    .tariff-container__btn {
+        width: 100%;
+    }
+
+    .tariff-container__price--number {
+        font-size: 40px;
+    }
+
+    .tariff-container__price--request {
+        font-size: 24px;
+    }
+
+    .tariff-container__info {
+        font-size: 18px;
+    }
+}

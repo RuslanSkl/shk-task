@@ -1,0 +1,84 @@
+.faq-section .about-title {
+    margin-bottom: 32px;
+}
+
+.faq-section {
+    padding-top: 140px;
+}
+
+.faq-section__container {
+    margin: 0 auto;
+    max-width: 818px;
+}
+
+.dropdown {
+    .dropdown-item {
+        border-bottom: 1px solid rgba(242, 242, 242, 0.08);
+    }
+
+    button {
+        color: #FFFFFF;
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 1em 0;
+        font-size: 16px;
+        line-height: 1.2;
+        border: none;
+        background: none;
+        outline: none;
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+
+        .icon {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 22px;
+            height: 22px;
+
+            &::before {
+                display: block;
+                position: absolute;
+                content: "";
+                top: 9px;
+                left: 6px;
+                width: 10px;
+                border-radius: 4px;
+                height: 2px;
+                background: currentColor;
+            }
+            &::after {
+                display: block;
+                position: absolute;
+                content: "";
+                top: 5px;
+                left: 10px;
+                width: 2px;
+                border-radius: 4px;
+                height: 10px;
+                background: currentColor;
+            }
+        }
+    }
+
+    button[aria-expanded="true"] {
+        .icon {
+            &::after {
+                width: 0;
+            }
+        }
+    }
+
+    .dropdown-content p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+        color: #b5c9d3;
+    }
+}

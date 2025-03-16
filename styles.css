@@ -1,0 +1,33 @@
+@import "src/styles/header.css";
+@import "src/styles/wallet.css";
+@import "src/styles/benefits.css";
+@import "src/styles/features.css";
+@import "src/styles/tariff.css";
+@import "src/styles/about.css";
+@import "src/styles/roadmap.css";
+@import "src/styles/faq.css";
+@import "src/styles/form.css";
+@import "src/styles/footer.css";
+
+/* Reset styles and global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Global page styles */
+html, body {
+    background: linear-gradient(#29404a, #1e292f);
+}
+
+.container {
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
