@@ -21,10 +21,35 @@
     justify-content: center;
     gap: 24px;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .features-container:last-child {
     margin-bottom: 0;
+}
+
+.features-container__ellipse {
+    position: absolute;
+    width: 505px;
+    height: 512px;
+    top: 230px;
+    left: -307px;
+    background: rgba(89, 149, 255, 0.4);
+    filter: blur(555px);
+    z-index: 0;
+    transform: translateX(-50%);
+}
+
+.features-container__ellipse-2 {
+    position: absolute;
+    width: 111px;
+    height: 111px;
+    top: 346px;
+    left: 1063px;
+    background: rgba(89, 149, 255, 0.26);
+    filter: blur(45px);
+    z-index: 0;
+    transform: translateX(-50%);
 }
 
 .features-block {

@@ -75,30 +75,149 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    max-width: 628px;
 }
 
 /* Wallet Image */
 .wallet-img {
-    max-width: 100%;
-    height: auto;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Ellipses styles */
+.crypto-wallet-ellipse {
+    position: absolute;
+    width: 236px;
+    height: 229px;
+    left: 140px;
+    z-index: 0;
+    background: rgba(89, 149, 255, 0.5);
+    filter: blur(100px);
+}
+
+.crypto-wallet-ellipse-2 {
+    position: absolute;
+    width: 277px;
+    height: 277px;
+    left: 100px;
+    border: 1px solid rgba(193, 214, 219, 0.1);
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.crypto-wallet-ellipse-3 {
+    position: absolute;
+    width: 384px;
+    height: 384px;
+    left: 45px;
+    border: 1px solid rgba(193, 214, 219, 0.1);
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.crypto-wallet-ellipse-4 {
+    position: absolute;
+    width: 419px;
+    height: 419px;
+    left: 27px;
+    border: 1px solid rgba(193, 214, 219, 0.1);
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.crypto-wallet-ellipse-5 {
+    position: absolute;
+    width: 541px;
+    height: 541px;
+    left: -28px;
+    border: 1px solid rgba(193, 214, 219, 0.15);
+    background-color: transparent;
+    filter: blur(8px);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.crypto-wallet-ellipse-6 {
+    position: absolute;
+    width: 770px;
+    height: 770px;
+    left: -139px;
+    border: 1px solid rgba(193, 214, 219, 0.6);
+    background-color: transparent;
+    filter: blur(30px);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.crypto-wallet-ellipse-7 {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 108px;
+    top: 140px;
+    background-color: rgba(109, 205, 255, 1);
+    filter: blur(3px);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.crypto-wallet-ellipse-8 {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 393px;
+    top: 75px;
+    background-color: rgba(109, 205, 255, 1);
+    filter: blur(1px);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.crypto-wallet-ellipse-9 {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 475px;
+    top: 290px;
+    background-color: rgba(109, 205, 255, 0.88);
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: 0;
 }
 
 /* RESPONSIVE STYLES */
+@media (max-width: 1439px) {
+    .crypto-wallet {
+        display: none;
+    }
+
+    .wallet {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     .wallet {
         flex-direction: column;
         text-align: center;
     }
 
+    .wallet-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .main-title {
         font-size: 32px;
-        max-width: 100%;
+        max-width: 65%;
     }
 
     .main-title-description {
-        font-size: 14px;
-        max-width: 100%;
+        font-size: 16px;
+        max-width: 65%;
     }
 
     .buttons {
@@ -106,12 +225,7 @@
     }
 
     .crypto-wallet {
-        max-width: 100%;
-        margin-top: 30px;
-    }
-
-    .wallet-img {
-        max-width: 80%;
+        display: none;
     }
 }
 
@@ -122,7 +236,6 @@
 
     .btn-primary,
     .btn-secondary {
-        width: 25%;
         text-align: center;
     }
 }

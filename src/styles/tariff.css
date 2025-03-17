@@ -4,6 +4,18 @@
     padding-top: 132px;
 }
 
+.tariff-ellipse {
+    position: absolute;
+    width: 532px;
+    height: 548px;
+    top: 467px;
+    left: 1035px;
+    background: rgba(89, 149, 255, 0.77);
+    filter: blur(555px);
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
 /* Title */
 .tariff-title {
     margin-bottom: 68px;
@@ -147,6 +159,7 @@
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .tariff-container__btn:hover {
     background-color: #FFFFFF;
     color: #52A4FF;
@@ -155,6 +168,12 @@
 }
 
 /* Responsive Styles */
+@media (max-width: 1439px) {
+    .tariff-ellipse {
+        display: none
+    }
+}
+
 @media (max-width: 1024px) {
     .tariff-container {
         flex-direction: column;
@@ -164,6 +183,10 @@
     .tariff-container__item {
         width: 45%;
         max-width: 400px;
+    }
+
+    .tariff-ellipse {
+        display: none
     }
 }
 
@@ -180,6 +203,10 @@
     .tariff-title {
         font-size: 1.75rem; /* Adjust for smaller screens */
         margin-bottom: 50px;
+    }
+
+    .tariff-ellipse {
+        display: none
     }
 }
 

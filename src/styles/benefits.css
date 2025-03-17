@@ -11,9 +11,11 @@
     border-radius: 22px;
     border: 1px solid #DDDDDD12;
     margin: 100px auto;
-    background: #F2F2F205;
+    background: rgba(242, 242, 242, 0.02);
+    backdrop-filter: blur(55px);
     position: relative;
     gap: 20px;
+    z-index: 1;
 }
 
 /* Background Ellipse */
@@ -21,12 +23,13 @@
     position: absolute;
     width: 126px;
     height: 122px;
-    bottom: -50px;
-    left: 50%;
+    left: 642px;
+    top: 120px;
+    background-color: rgba(89, 149, 255, 0.4);
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: 0;
     transform: translateX(-50%);
-    background: rgba(89, 149, 255, 0.4);
-    filter: blur(100px);
-    z-index: -1;
 }
 
 /* Benefits Container */

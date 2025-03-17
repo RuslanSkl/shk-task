@@ -28,6 +28,7 @@
         border: none;
         background: none;
         outline: none;
+
         &:hover,
         &:focus {
             cursor: pointer;
@@ -52,6 +53,7 @@
                 height: 2px;
                 background: currentColor;
             }
+
             &::after {
                 display: block;
                 position: absolute;
